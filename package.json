@@ -1,0 +1,46 @@
+{
+  "name": "@schrottfabrik/songstats-js-api-client",
+  "version": "1.0.0",
+  "description": "TypeScript API client for the Songstats API",
+  "private": false,
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "test": "vitest",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "songstats",
+    "api",
+    "client",
+    "music",
+    "analytics",
+    "typescript"
+  ],
+  "author": "Songstats",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.3.2",
+    "vitest": "^0.34.6",
+    "@types/node": "^20.10.0",
+    "tsup": "^8.0.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/schrottfabrik/songstats-js-api-client.git"
+  },
+  "bugs": {
+    "url": "https://github.com/schrottfabrik/songstats-js-api-client/issues"
+  },
+  "homepage": "https://github.com/schrottfabrik/songstats-js-api-client#readme"
+}
