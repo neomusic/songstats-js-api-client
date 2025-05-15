@@ -24,6 +24,7 @@ export class BaseClient {
 
     const response = await fetch(url, {
       ...options,
+      ...(this.config.requestOptions || {}),
       headers,
     });
 
